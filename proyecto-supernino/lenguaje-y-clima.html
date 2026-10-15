@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje y Clima: Conectando con Nuestra Tierra</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', 'Comic Sans MS', cursive, sans-serif; }
+        :root {
+            --azul-océano: #0277bd;
+            --amarillo-sol: #f9a825;
+            --verde-selva: #2e7d32;
+            --gris-nube: #546e7a;
+            --fondo-claro: #e1f5fe;
+            --texto-oscuro: #263238;
+        }
+        body {
+            background: linear-gradient(180deg, #e1f5fe 0%, #fff9c4 50%, #c8e6c9 100%);
+            background-size: 300% 300%;
+            animation: movimiento-cielo 18s ease-in-out infinite;
+            min-height: 100vh;
+            color: var(--texto-oscuro);
+        }
+        @keyframes movimiento-cielo {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 0%; }
+        }
+        nav {
+            background: linear-gradient(90deg, var(--azul-océano), var(--verde-selva), var(--amarillo-sol));
+            padding: 1.3rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 5px 22px rgba(0,0,0,0.15);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.7rem 1.2rem;
+            border-radius: 30px;
+            transition: all 0.4s ease;
+        }
+        nav a:hover, nav a.activa {
+            background: rgba(255,255,255,0.35);
+            transform: scale(1.1);
+        }
+        main {
+            padding: 3rem 6%;
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1.2rem;
+            color: var(--azul-océano);
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.15rem;
+            color: var(--verde-selva);
+            margin-bottom: 2.5rem;
+        }
+        .imagen-central {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 24px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(2,119,189,0.2);
+        }
+        .articulo {
+            background: rgba(255,255,255,0.9);
+            padding: 2.2rem;
+            border-radius: 22px;
+            margin: 2rem 0;
+            border-left: 7px solid var(--azul-océano);
+        }
+        .articulo h2 {
+            color: var(--verde-selva);
+            margin-bottom: 1rem;
+            font-size: 1.45rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .articulo p {
+            line-height: 1.9;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+        .mensaje-final {
+            background: linear-gradient(135deg, #fff9c4, #ffecb3);
+            padding: 2.2rem;
+            border-radius: 22px;
+            margin: 2.5rem 0;
+            border-right: 7px solid var(--amarillo-sol);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gris-nube);
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.7rem; }
+            .imagen-central { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+           <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="el-nino.html">🌊 El Niño</a></li>
+        <li><a href="supernino.html">🔥 Superniño</a></li>
+        <li><a href="graficos-datos.html">📊 Gráficos</a></li>
+        <li><a href="educacion-ambiental.html" class="activa">🌿 Educación</a></li>
+        <li><a href="lenguaje-y-clima.html" class="activa">📝 Español</a></li>
+
+    </ul>
+</nav>
+
+<main>
+    <h1>📝 Lenguaje y Clima: Conectando con Nuestra Tierra</h1>
+    <p class="subtitulo">Cómo aprendemos y explicamos lo que sucede con el tiempo</p>
+
+    <img src="escritura-y-naturaleza.jpg" alt="Libros, naturaleza y cambio climático" class="imagen-central">
+
+    <div class="articulo">
+        <h2>🌊 ¿Qué aprendimos sobre El Niño?</h2>
+        <p>El Niño es un cambio natural que ocurre en el océano Pacífico. Cuando las aguas se calientan más de lo normal, todo el clima cambia: hay lugares con mucha lluvia y otros con sequía. Los pescadores lo notaron hace mucho tiempo y le pusieron ese nombre porque suele aparecer cerca de diciembre.</p>
+        <p>El fenómeno se da cada cierto tiempo, pero hoy en día sus efectos se sienten con más fuerza. Esto nos enseña que lo que hacemos las personas también influye en el clima del planeta.</p>
+    </div>
+
+    <div class="articulo">
+        <h2>🔥 El Superniño: un fenómeno más fuerte</h2>
+        <p>Cuando el calentamiento del mar es muy intenso, se le llama Superniño. No es algo inventado ni una historia de ficción: es la misma naturaleza avisando que algo está cambiando. Los científicos dicen que estos fenómenos pueden volverse más frecuentes si seguimos dañando el medio ambiente.</p>
+        <p>La diferencia principal es que el Superniño trae cambios más fuertes y duraderos: más calor, menos lluvias donde siempre llovía, y más tormentas en otras zonas. Por eso es tan importante saber qué es y cómo prepararnos.</p>
+    </div>
+
+    <div class="articulo">
+        <h2>🇨🇴 ¿Qué pasa en Colombia con estos fenómenos?</h2>
+        <p>Nuestro país queda justo donde se sienten fuerte estos cambios. Cuando llega El Niño o el Superniño, baja la lluvia en casi todo el territorio. Los ríos disminuyen, los bosques se secan y hay riesgo de incendios. La agricultura se ve afectada y el agua se vuelve más escasa.</p>
+        <p>Esto no significa que no vaya a llover nunca, sino que las lluvias se vuelven impredecibles y desiguales. Por eso todos debemos cuidar el agua, no desperdiciarla y proteger las zonas verdes de nuestra ciudad y del campo.</p>
+    </div>
+
+    <div class="articulo">
+        <h2>✍️ ¿Por qué estudiamos esto en la clase de Español?</h2>
+        <p>El lenguaje no sirve solo para hablar y escribir: sirve para entender el mundo y transformarlo. Cuando investigamos sobre el clima, aprendemos a leer con atención, a separar información verdadera de lo que no lo es, y a explicarlo con palabras claras.</p>
+        <p>Escribir nos ayuda a organizar las ideas. Cuando tú le cuentas a un familiar lo que aprendiste, estás ayudando a que más personas se preocupen y actúen. Una palabra bien dicha puede mover a muchas personas a cuidar lo que tenemos.</p>
+        <p>Podemos escribir avisos, cuentos, cartas y explicaciones. Todo sirve si nace del deseo de proteger nuestro entorno. No necesitas ser experto para explicar: solo necesitas entender bien y hablar con la verdad.</p>
+    </div>
+
+    <div class="mensaje-final">
+        <h2>✨ Lo que nos queda</h2>
+        <p>El Niño y el Superniño nos recuerdan que la naturaleza es poderosa y que estamos conectados con ella. No podemos evitar que ocurran, pero sí podemos enfrentarlos mejor si nos preparamos juntos. Cuidar el agua, ahorrar energía, plantar árboles y no tirar basura son acciones que sí están en nuestras manos.</p>
+        <p>El cambio empieza por ti. No esperes a que otros lo hagan primero. Explica lo que sabes, cuida lo que tienes y anima a los que te rodean. El futuro se construye con acciones de hoy y con palabras que guíen el camino.</p>
+        <p style="text-align: center; font-weight: bold; color: var(--azul-océano); margin-top: 1.2rem;">"La naturaleza no necesita que la salvemos, necesita que la cuidemos. Y eso lo hacemos todos los días."</p>
+    </div>
+</main>
+
+<footer>
+    <p>Proyecto Escolar · 📝 Lenguaje y Clima · Aprender para Cuidar · 2026</p>
+</footer>
+
+</body>
+</html>
